@@ -1,0 +1,9 @@
+# Performance Analysis: Perfect Numbers Program
+
+## 2. How can you improve your program further more?
+
+The program can be improved by replacing the sequential point-to-point communication (MPI_Probe + MPI_Recv loop) with MPI_Gatherv, which uses efficient tree-based collective communication reducing time complexity from O(P) to O(log P) and better utilizing network bandwidth. Algorithmically, implementing the Lucas-Lehmer test specifically designed for Mersenne numbers would dramatically outperform the current trial division method, while precomputing small primes and using dynamic work scheduling would improve load balancing since larger n values require significantly more computation time. Additionally, early termination when the target count is reached and non-blocking communication to overlap computation with data transfer would further enhance performance.
+
+## 3. How does the communication and cache affect the performance of your program?
+
+Communication creates a significant bottleneck because rank 0 sequentially receives messages from all other processes (O(P) time complexity), causing network contention when all processes send simultaneously and limiting scalability as the number of processes increases—this overhead is particularly noticeable for small messages where latency dominates. Cache effects are generally positive for the sequential prime-checking loop which exhibits good cache locality with prefetching, but performance degrades substantially for larger n values (n > 25) where the divisor range exceeds cache capacity, causing expensive main memory accesses (100-300 cycle penalties per miss); while there's no false sharing since processes work independently, the cache hierarchy becomes a limiting factor for large Mersenne number tests, making algorithmic improvements like Lucas-Lehmer more critical than cache optimizations for this problem size.
