@@ -1,0 +1,27 @@
+[submodule "Decentralized Finance (CSIE5060)/hw1/lib/forge-std"]
+	path = Decentralized Finance (CSIE5060)/hw1/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "Decentralized Finance (CSIE5060)/hw1/lib/openzeppelin-contracts"]
+	path = Decentralized Finance (CSIE5060)/hw1/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "Decentralized Finance (CSIE5060)/hw2/lib/forge-std"]
+	path = Decentralized Finance (CSIE5060)/hw2/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "Decentralized Finance (CSIE5060)/hw2/lib/openzeppelin-contracts"]
+	path = Decentralized Finance (CSIE5060)/hw2/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "Decentralized Finance (CSIE5060)/hw3/lib/forge-std"]
+	path = Decentralized Finance (CSIE5060)/hw3/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "Decentralized Finance (CSIE5060)/hw3/lib/openzeppelin-contracts"]
+	path = Decentralized Finance (CSIE5060)/hw3/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
+[submodule "Decentralized Finance (CSIE5060)/hw3/lib/pyth-sdk-solidity"]
+	path = Decentralized Finance (CSIE5060)/hw3/lib/pyth-sdk-solidity
+	url = https://github.com/pyth-network/pyth-sdk-solidity
+[submodule "Decentralized Finance (CSIE5060)/hw4/lib/forge-std"]
+	path = Decentralized Finance (CSIE5060)/hw4/lib/forge-std
+	url = https://github.com/foundry-rs/forge-std
+[submodule "Decentralized Finance (CSIE5060)/hw4/lib/openzeppelin-contracts"]
+	path = Decentralized Finance (CSIE5060)/hw4/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
